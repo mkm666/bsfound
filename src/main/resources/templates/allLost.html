@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:templet="http://www.w3.org/1999/xhtml">
+<head>
+    <title>列表展示</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link  href="css/me.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="page-header">
+                <h1>
+                    <small>失物招领列表 —— 显示所有失物招领</small>
+                </h1>
+            </div>
+        </div>
+        <div class="col-md-4 column col-md-offset-10">
+            <a class="btn btn-primary" th:if="${session.userId != null}" href="/toUser" >个人中心</a>
+            <a class="btn btn-primary" th:if="${session.userId != null}" href="/toLetter" >感谢信</a>
+            <a id="logout" class="btn btn-danger" href="/logOut">注销登录</a>
+        </div>
+    </div>
+    <div class="input-group col-md-3" style="margin-top:0px ;positon:relative">
+        <input type="text" class="form-control" id="search" name="search" placeholder="请输入关键字" >
+        <span class="input-group-btn">
+               <button id="searchBt" class="btn btn-info btn-search" onclick="SearchBtn()">查找</button>
+            </span>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 column">
+<!--            <a class="btn btn-primary" href="${pageContext.request.contextPath}/book/toAddBook">新增</a> ?userId=' + ${session.userId} -->
+            <a class="btn btn-primary" th:if="${session.userId != null}" href="/toUserLost" >我的失物招领</a>
+            <a class="btn btn-primary" th:if="${session.userId == null}" href="/login">登录</a>
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <table class="table table-hover table-striped" id="table">
+                <thead>
+                <tr>
+                    <th>标题</th>
+                    <th>内容</th>
+                    <th>用户</th>
+                    <th>联系电话</th>
+                    <th>时间</th>
+                    <th>状态</th>
+                </tr>
+                </thead>
+
+                <tbody id="tabletext">
+                    <tr th:each="lostrecord : ${LostRecords}" th:switch="${lostrecord.status}">
+                        <td th:text="${lostrecord.title}"></td>
+                        <td th:text="${lostrecord.content}"></td>
+                        <td th:text="${lostrecord.username}"></td>
+                        <td th:text="${lostrecord.phone}"></td>
+                        <td th:text="${lostrecord.time}"></td>
+                        <td th:text="${lostrecord.typeCode == 1}?'失物招领':'寻物启事'"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!--http://localhost:8081/toAllLost?search=-->
+<!--var x = parseInt(document.getElementById("Text1").value);-->
+<!--var y = parseInt(document.getElementById("Text2").value);-->
+<script type="text/javascript" th:inline="javascript">
+    async function SearchBtn() {
+    //     // var result ='<%=request.getAttribute("customername")%>';
+    //     // var result = $("#LostRecords").val('@Model.LostRecords');
+    //     // var result=$("LostRecords").val();
+    //     var str = document.getElementById("search");
+    //     console.log(str.value);
+    //     var xhr = new XMLHttpRequest();
+    //     xhr.open("GET", "toAllLost?search=" + str.value, true);
+    //     await xhr.send();
+    //     console.log('刷新了');
+    //
+    //     var artTable = document.getElementById("table");
+    //     var tbo = artTable.getElementsByTagName("tbody")
+    //     var artBody=artTable.tBodies[0];
+    //     artBody.parentNode.outerHTML = artBody.parentNode.outerHTML.replace(artBody.innerHTML, "");
+    //     await $(".tabletext").load(location.href + " .tabletext");
+    //     $("#table").append(tbo);
+    //     var result2 = [[${LostRecords}]];
+    //     console.log("result2", result2)
+    //     $(".searchBt").click(function(){
+            $("#search").keyup(function(){
+                // var str = document.getElementById("search");
+                $("table tbody tr")
+                    .hide()
+                    .filter(":contains('"+( $(this).val() )+"')")
+                    .show();
+            }).keyup();
+        // })
+        // $("#table").load(location.href + " #table")
+        // $("#table").bootstrapTable("refresh", {
+        //     silent: true //静态刷新
+        // });
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script type="text/javascript">
+    var userId = $.session.get("userId");
+    $(function(){
+        alert(userId)
+    })
+
+</script>
+</body>
+</html>

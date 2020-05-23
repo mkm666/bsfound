@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: lostfound
+  thymeleaf:
+    mode: HTML
+  profiles:
+    active: dev
+  messages:
+    basename: i18n/messages
+
+server:
+  port: 8081
+

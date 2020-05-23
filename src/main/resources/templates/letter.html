@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>列表展示</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row clearfix">
+        <div class="col-md-8 column">
+            <div class="page-header">
+                <h1>
+                    <small>感谢信列表</small>
+                </h1>
+            </div>
+        </div>
+        <div class="col-md-4 column col-md-offset-10">
+            <a class="btn btn-danger" href="/logOut">注销登录</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 column">
+            <a class="btn btn-primary" href="/toAllLost">主页</a>
+            <a class="btn btn-primary" href="/toAddLetter">新增</a>
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <table class="table table-hover table-striped">
+                <thead>
+                <tr>
+                    <th>标题</th>
+                    <th>内容</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr th:each="letter : ${Letters}">
+                    <td th:text="${letter.title}"></td>
+                    <td th:text="${letter.description}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

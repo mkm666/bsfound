@@ -1,0 +1,87 @@
+2020-05-12 06:15:31.435  WARN 66503 --- [restartedMain] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-05-12 06:15:36.447  INFO 66503 --- [restartedMain] c.myapp.lostfound.LostfoundApplication   : Starting LostfoundApplication on mukedeMacBook-Pro.local with PID 66503 (started by muke in /Users/muke/Desktop/计科穆可可2016011677/lostfound)
+2020-05-12 06:15:36.447 DEBUG 66503 --- [restartedMain] c.myapp.lostfound.LostfoundApplication   : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-12 06:15:36.447  INFO 66503 --- [restartedMain] c.myapp.lostfound.LostfoundApplication   : The following profiles are active: dev
+2020-05-12 06:15:36.492  INFO 66503 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Library/Musicking/maven/repo/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Library/Musicking/maven/repo/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Library/Musicking/maven/repo/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Library/Musicking/maven/repo/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Library/Musicking/maven/repo/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Library/Musicking/maven/repo/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Library/Musicking/maven/repo/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-05-12 06:15:36.492  INFO 66503 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-12 06:15:36.492  INFO 66503 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-12 06:15:37.189  INFO 66503 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-12 06:15:37.250  INFO 66503 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 3 JPA repository interfaces.
+2020-05-12 06:15:37.923  INFO 66503 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-12 06:15:37.933  INFO 66503 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-12 06:15:37.933  INFO 66503 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-12 06:15:38.052  INFO 66503 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-12 06:15:38.053  INFO 66503 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1561 ms
+2020-05-12 06:15:38.240  INFO 66503 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-12 06:15:38.323  INFO 66503 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-12 06:15:38.436  INFO 66503 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-12 06:15:38.509  INFO 66503 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-12 06:15:38.638  INFO 66503 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-12 06:15:38.650  INFO 66503 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-12 06:15:39.263  INFO 66503 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-12 06:15:39.270  INFO 66503 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 06:15:39.327  INFO 66503 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-12 06:15:40.089  WARN 66503 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-12 06:15:40.257  INFO 66503 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-12 06:15:40.334  WARN 66503 --- [restartedMain] uration$JodaDateTimeJacksonConfiguration : Auto-configuration of Jackson's Joda-Time integration is deprecated in favor of using java.time (JSR-310).
+2020-05-12 06:15:40.429  INFO 66503 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 06:15:40.487  INFO 66503 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-12 06:15:40.882  INFO 66503 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-12 06:15:40.903  INFO 66503 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-12 06:15:40.932  INFO 66503 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-12 06:15:41.149  INFO 66503 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-12 06:15:41.152  INFO 66503 --- [restartedMain] c.myapp.lostfound.LostfoundApplication   : Started LostfoundApplication in 20.064 seconds (JVM running for 26.654)
+2020-05-12 06:15:50.907  INFO 66503 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-12 06:15:50.907  INFO 66503 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-12 06:15:50.919  INFO 66503 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-05-12 06:15:56.935 DEBUG 66503 --- [http-nio-8081-exec-2] c.m.lostfound.web.rest.UsersController   : REST to checkLogin: org.apache.catalina.connector.RequestFacade@4d088d2e
+2020-05-12 06:15:57.008 DEBUG 66503 --- [http-nio-8081-exec-1] c.m.lostfound.web.rest.UsersController   : REST to toAllLost: org.apache.catalina.connector.RequestFacade@4d088d2e
+2020-05-12 06:15:57.008 DEBUG 66503 --- [http-nio-8081-exec-1] c.m.lostfound.web.rest.UsersController   : REST to toAllLost: {}
+2020-05-12 06:16:03.649 DEBUG 66503 --- [http-nio-8081-exec-9] c.m.lostfound.web.rest.RecordController  : REST to UserLost: org.apache.catalina.connector.RequestFacade@4d088d2e
+2020-05-12 06:16:04.502 DEBUG 66503 --- [http-nio-8081-exec-5] c.m.lostfound.web.rest.RecordController  : REST to AddLost
+2020-05-12 06:16:27.538  INFO 66503 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-12 06:16:27.540  INFO 66503 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 06:16:27.543  INFO 66503 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-12 06:16:27.547  INFO 66503 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-12 06:16:47.280  WARN 66552 --- [restartedMain] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5006 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-05-12 06:16:52.287  INFO 66552 --- [restartedMain] c.myapp.lostfound.LostfoundApplication   : Starting LostfoundApplication on mukedeMacBook-Pro.local with PID 66552 (started by muke in /Users/muke/Desktop/计科穆可可2016011677/lostfound)
+2020-05-12 06:16:52.287 DEBUG 66552 --- [restartedMain] c.myapp.lostfound.LostfoundApplication   : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-12 06:16:52.288  INFO 66552 --- [restartedMain] c.myapp.lostfound.LostfoundApplication   : The following profiles are active: dev
+2020-05-12 06:16:52.320  INFO 66552 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Library/Musicking/maven/repo/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Library/Musicking/maven/repo/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Library/Musicking/maven/repo/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Library/Musicking/maven/repo/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Library/Musicking/maven/repo/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Library/Musicking/maven/repo/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Library/Musicking/maven/repo/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-05-12 06:16:52.321  INFO 66552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-12 06:16:52.321  INFO 66552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-12 06:16:52.828  INFO 66552 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-12 06:16:52.868  INFO 66552 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35ms. Found 3 JPA repository interfaces.
+2020-05-12 06:16:53.370  INFO 66552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-05-12 06:16:53.375  INFO 66552 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-12 06:16:53.375  INFO 66552 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-12 06:16:53.464  INFO 66552 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-12 06:16:53.464  INFO 66552 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1143 ms
+2020-05-12 06:16:53.599  INFO 66552 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-12 06:16:53.646  INFO 66552 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-12 06:16:53.729  INFO 66552 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-12 06:16:53.791  INFO 66552 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-12 06:16:53.875  INFO 66552 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-12 06:16:53.885  INFO 66552 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-12 06:16:54.281  INFO 66552 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-12 06:16:54.286  INFO 66552 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 06:16:54.334  INFO 66552 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-12 06:16:54.871  WARN 66552 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-12 06:16:54.989  INFO 66552 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-12 06:16:55.045  WARN 66552 --- [restartedMain] uration$JodaDateTimeJacksonConfiguration : Auto-configuration of Jackson's Joda-Time integration is deprecated in favor of using java.time (JSR-310).
+2020-05-12 06:16:55.120  INFO 66552 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 06:16:55.161  INFO 66552 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-05-12 06:16:55.481  INFO 66552 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-12 06:16:55.491  INFO 66552 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-12 06:16:55.509  INFO 66552 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-12 06:16:55.689  INFO 66552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-05-12 06:16:55.692  INFO 66552 --- [restartedMain] c.myapp.lostfound.LostfoundApplication   : Started LostfoundApplication in 18.696 seconds (JVM running for 24.188)
+2020-05-12 06:19:09.543  INFO 66552 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-12 06:19:09.544  INFO 66552 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-12 06:19:09.553  INFO 66552 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-05-12 06:19:09.571 DEBUG 66552 --- [http-nio-8081-exec-1] c.m.lostfound.web.rest.RecordController  : REST to AddLost
+2020-05-12 06:19:33.358 DEBUG 66552 --- [http-nio-8081-exec-3] c.m.lostfound.web.rest.RecordController  : REST to UserLost: org.apache.catalina.connector.RequestFacade@609aaaab
+2020-05-12 06:30:59.625  INFO 66552 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-12 06:30:59.626  INFO 66552 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 06:30:59.629  INFO 66552 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-12 06:30:59.634  INFO 66552 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

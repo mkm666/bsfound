@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>修改列表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="page-header">
+                <h1>
+                    <small>修改个人信息</small>
+                </h1>
+            </div>
+        </div>
+        <div class="col-md-4 column col-md-offset-10">
+            <a class="btn btn-danger" href="/logOut">注销登录</a>
+        </div>
+    </div>
+    <form action="/updateUser" method="post">
+        <div class="form-group">
+            <label for="name">姓名：</label>
+            <input type="text" name="name" class="form-control" id="name" th:value="${user.getName()}">
+        </div>
+        <div class="form-group">
+            <label for="schoolName">学校：</label>
+            <input type="text" name="schoolName" class="form-control" id="schoolName" th:value="${user.getSchoolName()}">
+        </div>
+        <div class="form-group">
+
+            <label for="username">学号：</label>
+            <input type="text" name="username" class="form-control" id="username" th:value="${user.getUsername()}">
+        </div>
+        <div class="form-group">
+            <label for="phone">联系电话：</label>
+            <input type="text" name="phone" class="form-control" id="phone" th:value="${user.getPhone()}">
+        </div>
+        <div class="form-group">
+            <label for="email">邮箱：</label>
+            <input type="text" name="email" class="form-control" id="email" th:value="${user.getEmail()}">
+        </div>
+        <div class="form-group">
+            <input type="hidden" name="id" th:value="${session.userId}">
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-defaultcontrol" value="修改">
+            <a href="/toUser"><input type="button" class="btn btn-defaultcontrol" style="color: #0b0b0b"  value="取消"/></a>
+        </div>
+    </form>
+
+</div>
+</body>
+</html>
